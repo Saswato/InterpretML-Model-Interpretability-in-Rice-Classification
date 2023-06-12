@@ -25,22 +25,24 @@ For each model, interpretability techniques are applied:
 
 ## Linear Regression (Ridge Classifier):
 
-The code calculates the mean absolute error (MAE) for the training and testing sets.
-It retrieves the regression coefficients and visualizes them using a bar plot, showing the importance of each predictor.
+- The code calculates the mean absolute error (MAE) for the training and testing sets.
+- It retrieves the regression coefficients and visualizes them using a bar plot, showing the importance of each predictor.
 
 ## Decision Tree:
 
-The code calculates the MAE for the training and testing sets.
-It visualizes the decision tree using the graphviz library, showing the nodes and splits.
+- The code calculates the MAE for the training and testing sets.
+- It visualizes the decision tree using the graphviz library, showing the nodes and splits.
 
 ## AutoML:
 
-The code sets up the H2O AutoML and trains multiple models.
-It selects the best model and retrieves it for further analysis.
+- The code sets up the H2O AutoML and trains multiple models.
+- It selects the best model and retrieves it for further analysis.
+
 The code then applies SHAP (SHapley Additive exPlanations) analysis on the models:
 
-For the linear model, it uses the shap.LinearExplainer to calculate SHAP values and visualizes them using force plots and summary plots.
-For the decision tree model, it uses the shap.TreeExplainer to calculate SHAP values and visualizes them using force plots and summary plots.
+- For the linear model, it uses the shap.LinearExplainer to calculate SHAP values and visualizes them using force plots and summary plots.
+- For the decision tree model, it uses the shap.TreeExplainer to calculate SHAP values and visualizes them using force plots and summary plots.
+
 Partial Dependence Plots (PDP) are also generated for the linear model and decision tree model to interpret feature importance and effects.
 
 Finally, the code concludes by mentioning the advantages of using SHAP values for model interpretability and the limitations of PDP plots for complex models.
