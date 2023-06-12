@@ -38,7 +38,8 @@ For each model, interpretability techniques are applied:
 - The code sets up the H2O AutoML and trains multiple models.
 - It selects the best model and retrieves it for further analysis.
 
-The code then applies SHAP (SHapley Additive exPlanations) analysis on the models:
+
+### The code then applies SHAP (SHapley Additive exPlanations) analysis on the models:
 
 - For the linear model, it uses the shap.LinearExplainer to calculate SHAP values and visualizes them using force plots and summary plots.
 - For the decision tree model, it uses the shap.TreeExplainer to calculate SHAP values and visualizes them using force plots and summary plots.
